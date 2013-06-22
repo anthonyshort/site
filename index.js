@@ -8,7 +8,7 @@ app.set('views', './views');
 app.set('view engine', 'jade');
 
 app.use('/public', express.static('public'));
-app.use('/articles', express.static('lib/blog/articles'));
+app.use('/articles', express.static('articles'));
 
 app.use(blog({
   articles: './articles'
